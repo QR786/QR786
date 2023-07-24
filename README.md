@@ -72,7 +72,7 @@ Data science requires a combination of technical and non-technical skills. Some 
 
 These are just some of the key skills required for data science. The specific skills required may vary depending on the industry or application domain.
 ..........................................................................................................................................
-# Weak 2
+### Weak 2
 # Python
 # Numpy
 # Series And Dataframe
