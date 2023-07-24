@@ -73,7 +73,7 @@ Data science requires a combination of technical and non-technical skills. Some 
 ### introduction to Python
 Python is a popular and versatile programming language known for its simplicity, readability, and flexibility. Created by Guido van Rossum and first released in 1991, Python has since gained immense popularity and is widely used in various domains, including web development, data analysis, artificial intelligence, scientific computing, automation, and more.
 
-Features of Python:
+### Features of Python:
 
  Readable and Elegant Syntax: Python emphasizes a clean and straightforward syntax that is easy to understand, making it an ideal language for beginners and experienced developers alike.
 
@@ -102,7 +102,7 @@ print(df1)
  Series And Dataframe
 In Python, the pandas library provides two essential data structures for data manipulation and analysis: Series and DataFrame.
 
- Series:
+### Series:
 A Series is a one-dimensional labeled array that can hold data of any type (integer, string, float, etc.). It is similar to a one-column table or a Python list with labeled indices. The indices help to access and align data easily.
 ### Code
 import pandas as pd
@@ -295,7 +295,7 @@ print(new_df.columns)
 ### Scale Meging/Meging Dataframe 
 In this lecture we're going to address how you can bring multiple dataframe objects together, either by merging them horizontally, or by concatenating them vertically. Before we jump into the code, we need to address a little relational theory and to get some language conventions down. I'm going to bring in an image to help explain some concepts.
 
-Venn Diagram
+### Venn Diagram
 
 Ok, this is a Venn Diagram. A Venn Diagram is traditionally used to show set membership. For example, the circle on the left is the population of students at a university. The circle on the right is the population of staff at a university. And the overlapping region in the middle are all of those students who are also staff. Maybe these students run tutorials for a course, or grade assignments, or engage in running research experiments.
 
@@ -305,7 +305,7 @@ When it comes to translating this to pandas, we can think of the case where we m
 
 Here's an image of what that would look like in the Venn diagram.
 
-Union
+### Union
 
 It's quite possible though that we only want those people who we have maximum information for, those people who are both staff and students. Maybe being a staff member and a student involves getting a tuition waiver, and we want to calculate the cost of this. In database terminology, this is called an inner join. Or in set theory, the intersection. It is represented in the Venn diagram as the overlapping parts of each circle.
 
@@ -431,11 +431,11 @@ Exploratory Data Analysis (EDA) is a critical step in the data analysis process.
 
 Key goals and techniques of Exploratory Data Analysis:
 
-Data Summarization:
+### Data Summarization:
 
 Getting an overview of the data by examining its shape (number of rows and columns) and data types.
 Computing summary statistics like mean, median, standard deviation, and quartiles to understand the central tendency and variability of the data.
-Data Visualization:
+### Data Visualization:
 
 Creating various visual representations of the data, such as histograms, bar charts, line plots, scatter plots, and box plots, to reveal underlying patterns, distributions, and relationships.
 Using color, size, and shape to encode additional information in visualizations.
@@ -469,19 +469,18 @@ The EDA process is not a rigid set of steps but a flexible and iterative explora
 ### Basic Data Understanding Univariate And Bivariate Analysis 
 Basic Data Understanding, Univariate Analysis, and Bivariate Analysis are fundamental components of Exploratory Data Analysis (EDA) that help analysts gain insights into the dataset's characteristics and relationships between variables.
 
-Basic Data Understanding:
+### Basic Data Understanding:
 
 This step involves getting familiar with the dataset, understanding its structure, and knowing the variables it contains.
 It includes checking the number of rows and columns in the dataset, identifying the data types of each variable, and exploring the first few rows of the dataset to get a glimpse of the data.
 Basic data understanding also involves checking for missing values, duplicates, and potential data quality issues.
-Univariate Analysis:
 
+### Univariate Analysis:
 Univariate analysis focuses on understanding and summarizing individual variables in the dataset.
 For numerical variables (continuous or discrete), it includes computing summary statistics like mean, median, standard deviation, and quartiles to understand central tendency and dispersion.
 For categorical variables, it involves calculating frequencies and proportions for each category to understand the distribution of categorical data.
 Visualization techniques like histograms, box plots, bar charts, and pie charts are commonly used to visually represent univariate data.
-Bivariate Analysis:
-
+### Bivariate Analysis:
 Bivariate analysis examines the relationship between two variables in the dataset.
 It helps identify correlations, associations, or patterns between pairs of variables.
 For numerical variables, scatter plots and correlation matrices can be used to visualize the relationship between variables.
@@ -535,22 +534,22 @@ plt.show()
  ### Types of Charts And Graphs
  There are various types of charts and graphs, each designed to visualize specific types of data and display different patterns or relationships. Here are some common types of charts and graphs:
 
-Bar Chart:
+### Bar Chart:
 
 A bar chart uses rectangular bars to represent data. The length of each bar is proportional to the value it represents.
 Bar charts are commonly used to compare categorical data or to show the frequency of different categories.
-Histogram:
+### Histogram:
 
 A histogram is a graphical representation of the distribution of numerical data. It consists of bars grouped into intervals (bins), with each bar representing the frequency or count of data falling into that bin.
-Line Chart:
+### Line Chart:
 
 A line chart displays data points connected by straight lines. It is often used to show trends or changes over time.
 Line charts are suitable for visualizing continuous data, such as stock prices, temperature variations, etc.
-Pie Chart:
+### Pie Chart:
 
 A pie chart represents data as slices of a circle, where each slice represents a different category and its size corresponds to the proportion of that category in the whole dataset.
 Pie charts are useful for displaying the relative composition of different parts of a whole.
-Scatter Plot:
+### Scatter Plot:
 
 A scatter plot uses individual data points to display the relationship between two numerical variables.
 Each data point on the scatter plot represents a single observation, and the x and y coordinates represent the values of the two variables being compared.
@@ -562,18 +561,18 @@ It shows the range of the data, the median (middle value), and the spread of the
 Area Chart:
 
 An area chart is similar to a line chart, but the area between the line and the x-axis is filled to represent the accumulated value or the contribution of each data point to the whole.
-Bubble Chart:
+### Bubble Chart:
 
 A bubble chart is a variation of a scatter plot where each data point is represented by a circle (bubble).
 The size of the circle (bubble) can represent a third variable, allowing visualization of three dimensions of data.
-Heatmap:
+### Heatmap:
 
 A heatmap represents data using color variations in a matrix format.
 Heatmaps are useful for visualizing the intensity or density of data points in two-dimensional space.
 Stacked Bar Chart:
 
 A stacked bar chart displays multiple sets of data stacked on top of one another, showing the total and individual contributions of each category.
-Radar Chart (Spider Chart):
+### Radar Chart (Spider Chart):
 
 A radar chart displays data on a two-dimensional plane with multiple axes emerging from a common center point, representing different variables.
 It is useful for visualizing multivariate data.
@@ -583,7 +582,7 @@ ggplot is a data visualization package in the R programming language that provid
 
 The ggplot2 package, created by Hadley Wickham, is the most popular and widely used implementation of the Grammar of Graphics in R. It allows users to create complex visualizations by layering different components, such as data, aesthetics, and geometric shapes, to represent various aspects of the data.
 
-Key features of ggplot2:
+### Key features of ggplot2:
 
 Layered Grammar: In ggplot2, a plot is built by adding different layers, including data, aesthetics, and geometric shapes. Each layer contributes to the final visual representation of the data.
 
@@ -628,42 +627,42 @@ ggplot(gap, aes(x = 'year', y = 'lifeExp', color = 'continent')) + geom_point()
   ### Tools for Data Visualization
   There are several tools available for data visualization, each with its own strengths and capabilities. The choice of tool depends on factors such as the complexity of the data, the level of interactivity required, the type of visualizations needed, and the programming language preference. Here are some popular tools for data visualization:
 
-ggplot2 (R):
+### ggplot2 (R):
 
 ggplot2 is an R package based on the Grammar of Graphics. It allows users to create sophisticated and highly customizable data visualizations using a layered approach.
 Ideal for static and publication-quality plots, especially for data analysis in R.
-Matplotlib (Python):
+### Matplotlib (Python):
 
 Matplotlib is a widely used Python library for data visualization. It provides a flexible and comprehensive set of functions for creating static, interactive, and animated plots.
 Suitable for basic to intermediate visualizations in Python.
-Seaborn (Python):
+### Seaborn (Python):
 
 Seaborn is built on top of Matplotlib and provides a higher-level interface for creating aesthetically pleasing statistical graphics.
 It is particularly useful for visualizing statistical relationships and has many built-in themes for easy customization.
-Plotly (Python and JavaScript):
+### Plotly (Python and JavaScript):
 
 Plotly is a powerful tool for creating interactive and dynamic visualizations in both Python and JavaScript.
 It supports a wide range of chart types and is often used for creating web-based interactive dashboards.
-Tableau (Desktop and Public):
+### Tableau (Desktop and Public):
 
 Tableau is a popular data visualization software that offers a user-friendly drag-and-drop interface for creating visualizations without the need for coding.
 Ideal for business analysts and non-technical users to explore data and create interactive dashboards.
-Power BI (Microsoft):
+### Power BI (Microsoft):
 
 Power BI is a business intelligence tool by Microsoft that provides data visualization capabilities along with data modeling, reporting, and dashboard creation.
 Suitable for creating interactive and data-driven dashboards.
-D3.js (JavaScript):
+### D3.js (JavaScript):
 
 D3.js is a JavaScript library for creating interactive and data-driven visualizations directly in web browsers.
 It provides fine-grained control over visual elements and is commonly used for custom visualizations and infographics.
-Bokeh (Python):
+### Bokeh (Python):
 
 Bokeh is a Python library for interactive data visualization that targets modern web browsers. It provides a high-level and concise API for creating interactive plots.
 Suitable for creating web-based interactive visualizations.
-Excel and Google Sheets:
+### Excel and Google Sheets:
 
 For quick and simple visualizations, spreadsheet software like Microsoft Excel and Google Sheets offer built-in charting tools for basic visualization needs.
-Altair (Python):
+### Altair (Python):
 
 Altair is a declarative statistical visualization library for Python that allows users to define visualizations by writing concise and expressive code.
 These tools provide a wide range of options for data visualization, catering to various skill levels and project requirements. Depending on the task at hand, data analysts and scientists can choose the tool that best fits their needs and enables them to effectively communicate insights from their data.
