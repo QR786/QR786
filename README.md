@@ -72,11 +72,11 @@ Data science requires a combination of technical and non-technical skills. Some 
 
 These are just some of the key skills required for data science. The specific skills required may vary depending on the industry or application domain.
 ..........................................................................................................................................
-## Weak 2
+# Weak 2
 # Python
 # Numpy
 # Series And Dataframe
-## introduction to Python
+# introduction to Python
 Python is a popular and versatile programming language known for its simplicity, readability, and flexibility. Created by Guido van Rossum and first released in 1991, Python has since gained immense popularity and is widely used in various domains, including web development, data analysis, artificial intelligence, scientific computing, automation, and more.
 
 Features of Python:
@@ -92,7 +92,7 @@ Large Standard Library: Python comes with a vast standard library that offers nu
 Open-source and Community-driven: Python is open-source, which means its source code is freely available for everyone. It has a large and active community of developers who contribute to its growth and development.
 
 Cross-platform Compatibility: Python code can run on various operating systems, including Windows, macOS, Linux, and more.
-## Code
+# Code
 import requests
 import json
 import pandas as pd
@@ -105,12 +105,12 @@ df= df2['results'].to_dict();
 # I created an other Data frame for our results .
 df1 = pd.DataFrame.from_dict(df);
 print(df1)
-## Series And Dataframe
+# Series And Dataframe
 In Python, the pandas library provides two essential data structures for data manipulation and analysis: Series and DataFrame.
 
 # Series:
 A Series is a one-dimensional labeled array that can hold data of any type (integer, string, float, etc.). It is similar to a one-column table or a Python list with labeled indices. The indices help to access and align data easily.
-## Code
+# Code
 import pandas as pd
 
 # Creating a Series from a Python list
@@ -120,9 +120,9 @@ series = pd.Series(data)
 # Creating a Series with custom indices
 series_custom_index = pd.Series(data, index=['A', 'B', 'C', 'D', 'E'])
 
-## DataFrame:
+# DataFrame:
 A DataFrame is a two-dimensional labeled data structure, like a spreadsheet or SQL table. It consists of rows and columns and can hold multiple data types. Each column in a DataFrame is a Series.
-## Code
+# Code
 import pandas as pd
 
 # Creating a DataFrame from a dictionary
@@ -137,7 +137,7 @@ df = pd.DataFrame(data)
 # Specifying custom row indices
 df_custom_index = pd.DataFrame(data, index=['person1', 'person2', 'person3'])
 
-## introduction to Numpy
+# introduction to Numpy
 NumPy (Numerical Python) is a powerful Python library for numerical and scientific computing. It provides support for large, multi-dimensional arrays and matrices, along with an extensive collection of mathematical functions to operate on these arrays. NumPy is the foundation of many other Python libraries used in data analysis, machine learning, and scientific research.
 
 Key features of NumPy:
@@ -157,7 +157,7 @@ Random Number Generation: NumPy includes functions for generating random numbers
 Getting Started with NumPy:
 
 To use NumPy, you need to install it on your system. You can install it using pip:
-## Code
+# Code
 # You'll recall that we import a library using the `import` keyword as numpy's common abbreviation is np
 import numpy as np
 import math
@@ -177,9 +177,9 @@ array([[1, 2, 3],
 b.shape
 (2, 3)
 .........................................................................................................................................
-## Weak 3
-## Data Types and Sources
-## types of Fetching And Data Through the API
+# Weak 3
+# Data Types and Sources
+# types of Fetching And Data Through the API
 When working with APIs (Application Programming Interfaces), there are generally two types of data fetching methods:
 
 HTTP Methods for Data Fetching:
@@ -209,7 +209,7 @@ HTML (Hypertext Markup Language): In some cases, APIs return data in HTML format
 Binary Formats (e.g., images, audio, video): APIs can also be used to fetch binary data, such as images, audio, and video files.
 
 When interacting with an API, you need to be aware of the data format used in the API response. You'll typically parse the response data (e.g., using JSON decoding) to extract and use the relevant information in your application.
-## Code
+# Code
 import pandas as pd
 import requests
 response = requests.get('https://api.themoviedb.org/3/movie/top_rated?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US&page=1')
@@ -220,11 +220,11 @@ import pandas as pd
 import seaborn as sns
 df = pd.read_csv('train.csv')
 .........................................................................................................................................
-## Weak 4
-## Data Cleaning and Preprocessing
-## Pivot Table Scale Meging Dataframe Groupby
+# Weak 4
+# Data Cleaning and Preprocessing
+# Pivot Table Scale Meging Dataframe Groupby
 
-## Data Cleaning and Preprocessing
+# Data Cleaning and Preprocessing
 Data cleaning and preprocessing are critical steps in the data analysis and machine learning pipeline. They involve transforming raw, noisy, or inconsistent data into a clean and structured format suitable for analysis and modeling. The goal is to improve data quality, remove errors, handle missing values, and ensure the data is in a usable state for further analysis or training machine learning models.
 
 Here are some common data cleaning and preprocessing techniques:
@@ -264,9 +264,9 @@ In some cases, data comes from multiple sources and needs to be integrated or me
 
 Data Reduction:
 When dealing with large datasets, data reduction techniques like PCA (Principal Component Analysis) or feature selection can be used to reduce the dimensionality of the data while preserving important information.
-## Pivot Table
+# Pivot Table
 A pivot table is a way of summarizing data in a DataFrame for a particular purpose. It makes heavy use of the aggregation function. A pivot table is itself a DataFrame, where the rows represent one variable that you're interested in, the columns another, and the cell's some aggregate value. A pivot table also tends to includes marginal values as well, which are the sums for each column and row. This allows you to be able to see the relationship between two variables at just a glance.
-## Code
+# Code
 # Lets take a look at pivot tables in pandas
 import pandas as pd
 import numpy as np
@@ -298,7 +298,7 @@ print(new_df.index)
 # And let's look at the columns
 print(new_df.columns)
 
-## Scale Meging/Meging Dataframe 
+# Scale Meging/Meging Dataframe 
 In this lecture we're going to address how you can bring multiple dataframe objects together, either by merging them horizontally, or by concatenating them vertically. Before we jump into the code, we need to address a little relational theory and to get some language conventions down. I'm going to bring in an image to help explain some concepts.
 
 Venn Diagram
@@ -315,7 +315,7 @@ Union
 
 It's quite possible though that we only want those people who we have maximum information for, those people who are both staff and students. Maybe being a staff member and a student involves getting a tuition waiver, and we want to calculate the cost of this. In database terminology, this is called an inner join. Or in set theory, the intersection. It is represented in the Venn diagram as the overlapping parts of each circle.
 
-## Code
+# Code
 mport pandas as pd
 
 # First we create two DataFrames, staff and students.
@@ -401,10 +401,10 @@ grades.head()
 df[df["Grades"]>"C"]
 grades[grades>"C"]
 
-## Groupby/Group Data
+# Groupby/Group Data
 Sometimes we want to select data based on groups and understand aggregated data on a group level. We have seen that even though Pandas allows us to iterate over every row in a dataframe, it is generally very slow to do so. Fortunately Pandas has a groupby() function to speed up such task. The idea behind the groupby() function is that it takes some dataframe, splits it into chunks based on some key values, applies computation on those chunks, then combines the results back together into another dataframe. In pandas this is referred to as the split-apply-combine pattern.
 
-## Code
+# Code
 import pandas as pd
 import numpy as np
 # Let's look at some US census data
@@ -427,12 +427,12 @@ for state in df['STNAME'].unique():
     print('Counties in state ' + group + 
           ' have an average population of ' + str(avg))
 .......................................................................................................................................  
- ## Weak 5
- ## Exploratory Data Analysis (EDA)
- ## Basic Data Understanding Univariate And Bivariate Analysis 
+ # Weak 5
+ # Exploratory Data Analysis (EDA)
+ # Basic Data Understanding Univariate And Bivariate Analysis 
  
 
-## Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 Exploratory Data Analysis (EDA) is a critical step in the data analysis process. It involves visually and statistically exploring and summarizing the main characteristics, patterns, and relationships present in the dataset. EDA helps data analysts and scientists to gain insights, detect patterns, and identify potential issues or trends in the data. It often serves as a foundation for further data cleaning, preprocessing, and modeling.
 
 Key goals and techniques of Exploratory Data Analysis:
@@ -472,7 +472,7 @@ Geospatial Analysis (if applicable):
 For datasets with geospatial information, visualizing data on maps and analyzing spatial patterns.
 The EDA process is not a rigid set of steps but a flexible and iterative exploration of the data. Visualizations play a crucial role in EDA, as they provide a powerful way to understand complex relationships and patterns within the data. Python libraries such as Pandas, Matplotlib, Seaborn, and Plotly are commonly used for conducting EDA.
 
-## Basic Data Understanding Univariate And Bivariate Analysis 
+# Basic Data Understanding Univariate And Bivariate Analysis 
 Basic Data Understanding, Univariate Analysis, and Bivariate Analysis are fundamental components of Exploratory Data Analysis (EDA) that help analysts gain insights into the dataset's characteristics and relationships between variables.
 
 Basic Data Understanding:
@@ -493,7 +493,7 @@ It helps identify correlations, associations, or patterns between pairs of varia
 For numerical variables, scatter plots and correlation matrices can be used to visualize the relationship between variables.
 For categorical variables, cross-tabulations or stacked bar charts can be used to explore the relationship between categories across two variables.
 Bivariate analysis is essential for understanding how variables interact and influence each other.
-## Code
+# Code
 
 import pandas as pd
 import seaborn as sns
@@ -534,11 +534,11 @@ plt.ylabel('Total Bill')
 plt.show()
 ........................................................................................................................................
 
- ## Weak 6
- ## Types of Charts And Graphs
- ## GGPLOT
+ # Weak 6
+ # Types of Charts And Graphs
+ # GGPLOT
 
- ## Types of Charts And Graphs
+ # Types of Charts And Graphs
  There are various types of charts and graphs, each designed to visualize specific types of data and display different patterns or relationships. Here are some common types of charts and graphs:
 
 Bar Chart:
@@ -584,7 +584,7 @@ Radar Chart (Spider Chart):
 A radar chart displays data on a two-dimensional plane with multiple axes emerging from a common center point, representing different variables.
 It is useful for visualizing multivariate data.
 
-## GGPLOT
+# GGPLOT
 ggplot is a data visualization package in the R programming language that provides a flexible and powerful way to create high-quality graphics. It is based on the Grammar of Graphics, a conceptual framework for creating graphics by combining different components in a structured and coherent manner.
 
 The ggplot2 package, created by Hadley Wickham, is the most popular and widely used implementation of the Grammar of Graphics in R. It allows users to create complex visualizations by layering different components, such as data, aesthetics, and geometric shapes, to represent various aspects of the data.
@@ -601,7 +601,7 @@ Faceting: Faceting enables users to create small multiples or subplots based on 
 
 Customization: ggplot2 offers extensive customization options, allowing users to adjust the appearance of the plot, including labels, titles, themes, axes, legends, and color palettes.
 
-## Code
+# Code
 from ggplot import *
 import pandas
 Download the gapminder CSV file
@@ -626,12 +626,12 @@ Plot lifeExp vs. year colored by continent
 ggplot(gap, aes(x = 'year', y = 'lifeExp', color = 'continent')) + geom_point()
 .........................................................................................................................................
 
- ## Weak 7
- ## Tools for Data Visualization
- ## Data Visualization
+ # Weak 7
+ # Tools for Data Visualization
+ # Data Visualization
 
 
-  ## Tools for Data Visualization
+  # Tools for Data Visualization
   There are several tools available for data visualization, each with its own strengths and capabilities. The choice of tool depends on factors such as the complexity of the data, the level of interactivity required, the type of visualizations needed, and the programming language preference. Here are some popular tools for data visualization:
 
 ggplot2 (R):
@@ -674,19 +674,19 @@ Altair (Python):
 Altair is a declarative statistical visualization library for Python that allows users to define visualizations by writing concise and expressive code.
 These tools provide a wide range of options for data visualization, catering to various skill levels and project requirements. Depending on the task at hand, data analysts and scientists can choose the tool that best fits their needs and enables them to effectively communicate insights from their data.
 
- ## Data Visualization
+ # Data Visualization
 Data visualization is a very important part of data analysis. You can use it to explore your data. If you understand your data well, you’ll have a better chance to find some insights. Finally, when you find any insights, you can use visualizations again to be able to share your findings with other people.
 
 For example, look at the nice plot below. This plot shows the Life Expectancy and Income of 182 nations in the year 2015. Each bubble represents a country, the color represents a region, and the size represents the population of that country.
 Before we look at some kinds of plots, we’ll introduce some basic rules. Those rules help us make nice and informative plots instead of confusing ones.
-## Basic Visualization Rules
+# Basic Visualization Rules
 The first step is to choose the appropriate plot type. If there are various options, we can try to compare them, and choose the one that fits our model the best.
 Second, when we choose your type of plot, one of the most important things is to label your axis. If we don’t do this, the plot is not informative enough. When there are no axis labels, we can try to look at the code to see what data is used and if we’re lucky we’ll understand the plot. But what if we have just the plot as an image? What if we show this plot to your boss who doesn’t know how to make plots in Python?
 Third, we can add a title to make our plot more informative.
 Fourth, add labels for different categories when needed.
 Five, optionally we can add a text or an arrow at interesting data points.
 Six, in some cases we can use some sizes and colors of the data to make the plot more informative.
-## Types of Visualizations and Examples with Matplotlib
+# Types of Visualizations and Examples with Matplotlib
 There are many types of visualizations. Some of the most famous are: line plot, scatter plot, histogram, box plot, bar chart, and pie chart. But among so many options how do we choose the right visualization? First, we need to make some exploratory data analysis. After we know the shape of the data, the data types, and other useful statistical information, it will be easier to pick the right visualization type. By the way, when I used the words “plot”, “chart”, and “visualization” I mean the same thing. Here, I found an image for chart suggestion that can be useful.
 
 There are many visualization packages in Python. One of the most famous is Matplotlib. It can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, and web application servers.
