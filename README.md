@@ -72,11 +72,11 @@ Data science requires a combination of technical and non-technical skills. Some 
 
 These are just some of the key skills required for data science. The specific skills required may vary depending on the industry or application domain.
 ..........................................................................................................................................
-### Weak 2
-# Python
-# Numpy
-# Series And Dataframe
-# introduction to Python
+## Weak 2
+### Python
+### Numpy
+### Series And Dataframe
+### introduction to Python
 Python is a popular and versatile programming language known for its simplicity, readability, and flexibility. Created by Guido van Rossum and first released in 1991, Python has since gained immense popularity and is widely used in various domains, including web development, data analysis, artificial intelligence, scientific computing, automation, and more.
 
 Features of Python:
